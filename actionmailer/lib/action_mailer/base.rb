@@ -310,7 +310,7 @@ module ActionMailer
   #     private
   #
   #       def add_inline_attachment!
-  #         attachments.inline["footer.jpg"] = File.read('/path/to/filename.jpg')
+  #         attachments.inline["footer.jpg"] = File.read('path/to/filename.jpg')
   #       end
   #   end
   #
@@ -659,7 +659,7 @@ module ActionMailer
 
     # Allows you to add attachments to an email, like so:
     #
-    #  mail.attachments['filename.jpg'] = File.read('/path/to/filename.jpg')
+    #  mail.attachments['filename.jpg'] = File.read('path/to/filename.jpg')
     #
     # If you do this, then Mail will take the file name and work out the mime type
     # set the Content-Type, Content-Disposition, Content-Transfer-Encoding and
@@ -668,13 +668,13 @@ module ActionMailer
     # You can also specify overrides if you want by passing a hash instead of a string:
     #
     #  mail.attachments['filename.jpg'] = {mime_type: 'application/x-gzip',
-    #                                      content: File.read('/path/to/filename.jpg')}
+    #                                      content: File.read('path/to/filename.jpg')}
     #
     # If you want to use a different encoding than Base64, you can pass an encoding in,
     # but then it is up to you to pass in the content pre-encoded, and don't expect
     # Mail to know how to decode this data:
     #
-    #  file_content = SpecialEncode(File.read('/path/to/filename.jpg'))
+    #  file_content = SpecialEncode(File.read('path/to/filename.jpg'))
     #  mail.attachments['filename.jpg'] = {mime_type: 'application/x-gzip',
     #                                      encoding: 'SpecialEncoding',
     #                                      content: file_content }
