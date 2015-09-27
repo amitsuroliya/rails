@@ -1,4 +1,4 @@
-Ruby on Rails is a volunteer effort. We encourage you to pitch in. [Join the team](http://contributors.rubyonrails.org)!
+Ruby on Rails is an volunteer effort. We encourage you to pitch in. [Join the team](http://contributors.rubyonrails.org)!
 
 * If you want to submit a bug report please make sure to follow our [reporting guidelines](http://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#reporting-an-issue).
 
